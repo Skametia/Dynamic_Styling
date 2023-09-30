@@ -1,0 +1,58 @@
+* {
+  /* display: center]]; */
+  margin-left: 5%;
+}
+.form-control {
+  margin: 0.5rem 0;
+  align-items: center;
+  display: center;
+}
+.form-control label {
+  font-weight: bold;
+
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  text-decoration: underline;
+}
+.form-control label:hover {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: blueviolet;
+  color: aquamarine;
+  /* background-color: aqua; */
+}
+.form-control input {
+  display: center;
+  width: 50%;
+  height: 40px;
+  background-color: rgb(220, 250, 240);
+
+  border: 2px solid rgb(44, 243, 177);
+  border-radius: 11px;
+  font: inherit;
+  line-height: 1.5rem;
+  padding: 0 0.25rem;
+}
+.form-control input:hover {
+  background-color: rgb(248, 243, 252);
+  border: 2px solid rgb(205, 114, 223);
+}
+button {
+  padding: 10px;
+  font-size: large;
+  color: aliceblue;
+  border-radius: 12px;
+  background-color: rgb(56, 59, 62);
+}
+button:hover {
+  background-color: rgb(202, 155, 247);
+  color: white;
+  border: 2px solid rgb(205, 114, 223);
+}
+.goal-list {
+  display: center;
+}
+.goal-item {
+  display: center;
+}
