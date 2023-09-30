@@ -1,5 +1,4 @@
 * {
-  /* display: center]]; */
   margin-left: 5%;
 }
 .form-control {
@@ -26,9 +25,9 @@
   display: center;
   width: 50%;
   height: 40px;
-  background-color: rgb(220, 250, 240);
+  background-color: rgb(168, 198, 188);
 
-  border: 2px solid rgb(44, 243, 177);
+  border: 2px solid rgb(83, 241, 188);
   border-radius: 11px;
   font: inherit;
   line-height: 1.5rem;
