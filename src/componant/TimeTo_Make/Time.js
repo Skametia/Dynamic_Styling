@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Card from "./Card";
-import Button from "./Button";
+import "./Button.css";
 
 const classes = {
   input: "yourInputClass",
@@ -25,6 +25,7 @@ const Time = (props) => {
 
   return (
     <div>
+    
       <Card className={classes.input}>
         <form onSubmit={adduserHandler}>
           <label htmlFor="username">Username</label>
