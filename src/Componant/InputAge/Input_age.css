@@ -1,19 +1,22 @@
-.centered-container {
+.sana-container {
   display: flex;
   justify-content: center; /* Horizontal centering */
   align-items: center; /* Vertical centering */
-  height: 200px; /* Set the height of the container */
+  flex-direction: column;
+  background-color: antiquewhite;
 }
 
 .centered-text {
-  padding: 20px;
+  /* padding: 20px; */
 }
-.Dynamic-styling-input {
+.sana_age-styling-input {
   padding: 20px 10px 20px 10px;
-  border: 2px solid  #17c3b2;
+  border: 2px solid #17c3b2;
   border-radius: 15px 0 16px 0;
-  width: 300px;
+  width: 600px;
   font-size: 20px;
+  flex-direction: column;
+  display: block;
   margin: 20px;
 }
 /* -------------------------button------------------------------- */
