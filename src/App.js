@@ -8,7 +8,7 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/Dynamic_Styling" element={<Dynamic_Styling />} />
+          <Route path="/" element={<Dynamic_Styling />} />
           <Route path="/Input_age" element={<Input_age />} />
         </Routes>
       </BrowserRouter>

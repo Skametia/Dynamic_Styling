@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Input_age.css";
 
 const Input_age = () => {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
+  const [collegeName, setCollegeName] = useState("");
   const [submitted, setSubmitted] = useState([]);
   const [ageError, setAgeError] = useState(false);
+  const collegeNameRef = useRef();
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -16,6 +18,10 @@ const Input_age = () => {
     setAgeError(false);
   };
 
+  const handleCollegeNameChange = (e) => {
+    setCollegeName(e.target.value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -23,11 +29,13 @@ const Input_age = () => {
       setAgeError(true);
       alert("Invalid input. Both name and age are required.");
     } else {
-      const newItem = `${name} - ${age}`;
+      const newItem = `${name} - ${age} - ${collegeName}`;
       setSubmitted((prevSubmitted) => [...prevSubmitted, newItem]);
       setName("");
       setAge("");
+      setCollegeName("");
       setAgeError(false);
+      collegeNameRef.current.focus(); // Focus on College Name input after submission
     }
   };
 
@@ -55,7 +63,7 @@ const Input_age = () => {
           </div>
 
           <input
-            className="sana_age-styling-input "
+            className="sana_age-styling-input"
             type="number"
             placeholder="Age"
             value={age}
@@ -64,6 +72,16 @@ const Input_age = () => {
             }}
             onChange={handleAgeChange}
           />
+
+          <input
+            className="sana_age-styling-input"
+            type="text"
+            placeholder="College Name"
+            value={collegeName}
+            onChange={handleCollegeNameChange}
+            ref={collegeNameRef} // Assign the ref to College Name input
+          />
+
           <button type="submit" className="Dynamic-styling-button">
             Submit
           </button>
