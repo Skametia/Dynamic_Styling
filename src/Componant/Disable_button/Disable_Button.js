@@ -51,7 +51,7 @@ const LoginForm = () => {
                 type="password"
                 value={password}
                 onChange={handlePasswordChange}
-                className="mx-auto d-flex justify-content-center"
+                className="mx-auto d-flex justify-content-center sana-password"
               />
             </label>
             <br />
