@@ -35,7 +35,7 @@ const Input_age = () => {
       setAge("");
       setCollegeName("");
       setAgeError(false);
-      collegeNameRef.current.focus(); // Focus on College Name input after submission
+      collegeNameRef.current.focus();
     }
   };
 
@@ -79,7 +79,7 @@ const Input_age = () => {
             placeholder="College Name"
             value={collegeName}
             onChange={handleCollegeNameChange}
-            ref={collegeNameRef} // Assign the ref to College Name input
+            ref={collegeNameRef}
           />
 
           <button type="submit" className="Dynamic-styling-button">
