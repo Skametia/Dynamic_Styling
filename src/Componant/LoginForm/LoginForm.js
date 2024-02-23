@@ -1,3 +1,5 @@
+// LoginForm.js
+
 import React, { useState } from "react";
 import Input from "./Input";
 
@@ -5,7 +7,13 @@ const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleChange = (setter) => (e) => setter(e.target.value);
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -19,7 +27,7 @@ const LoginForm = () => {
         label="Email"
         placeholder="Enter your email"
         value={email}
-        onChange={handleChange(setEmail)}
+        onChange={handleEmailChange}
       />
 
       <Input
@@ -27,7 +35,7 @@ const LoginForm = () => {
         label="Password"
         placeholder="Enter your password"
         value={password}
-        onChange={handleChange(setPassword)}
+        onChange={handlePasswordChange}
       />
 
       <button type="submit" className="btn btn-primary">

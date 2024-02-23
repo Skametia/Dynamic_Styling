@@ -1,6 +1,6 @@
 // Input.js
 
-import React from "react";
+import React from 'react';
 
 const Input = ({ type, label, placeholder, value, onChange }) => (
   <div className="mb-3">
