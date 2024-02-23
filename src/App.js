@@ -12,7 +12,11 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Dynamic_Styling />} />
           <Route path="/Input_age" element={<Input_age />} />
+
           <Route path="/LoginForm" element={<LoginForm />} />
+
+         
+
         </Routes>
       </BrowserRouter>
     </div>
